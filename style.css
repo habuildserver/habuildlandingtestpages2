@@ -9,7 +9,9 @@
     --yellowAccent: #fffbf0;
     --yellow: #ffe299;
     --btnGrey: #ededed;
-    --liveColor: red;
+    --coffee: #cd8319;
+    --bgCoffee: #fff8ee;
+    --shadeGreyBg: #f7f7f7;
   }
   html,
   body {
@@ -22,6 +24,9 @@
   .tw-days {
     font-weight: 800 !important;
     font-size: 0.75rem;
+  }
+  .two-five {
+    margin: 10px !important;
   }
 
   b {
@@ -37,11 +42,36 @@
     width: 90%;
     text-align: center;
   }
-
+  .fd-tag {
+    padding-bottom: 15px !important;
+    color: var(--coffee);
+  }
+  .first-dates {
+    color: var(--coffee);
+    font-size: 1rem !important;
+    padding: 5px 0 !important;
+  }
+  .first-dates span {
+    color: red;
+  }
+  .first-tl {
+    font-size: 1.1rem !important;
+  }
+  .already-joined {
+    font-size: 1rem !important;
+  }
   .first {
-    background-color: #ececec;
+     background-color: var(--bgCoffee) !important;
     margin: 0;
     padding: 0;
+    background-color: var(--bgCoffee) !important;
+    position: relative;
+    padding: 5% 0 10% 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
   }
 
   .yoga-vid {
@@ -80,16 +110,6 @@
     margin: 25px 0 0 0 !important;
   }
 
-  .first {
-    position: relative;
-    padding: 50% 0 25% 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
-    width: 100%;
-  }
-
   .f-left {
     position: absolute;
     top: 20%;
@@ -119,37 +139,69 @@
   }
 
   .inp {
-    width: 85%;
+    width: 20%;
     font-size: 1rem;
     padding: 15px;
     border: 0.5px solid black;
     border-radius: 20px;
+    margin: -5px 0 !important;
+    overflow: hidden !important;
+  }
+  .inp-parent {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .intl-tel-input,
+  .iti {
+    display: block;
+    width: 20%;
+    margin: 15px 0;
+    background-color: var(--white) !important;
+    overflow: hidden;
   }
 
+  #mobile_code {
+    background-color: var(--white) !important;
+    border-radius: 15px;
+    border: 0.5px solid black !important;
+    resize: inherit;
+  }
+
+  .phone-input {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+  }
   .join-btn {
-    font-size: 1rem;
+    font-size: 1.2rem;
     background-color: var(--black);
     color: aliceblue;
     padding: 10px 20px;
     border: none;
     border-radius: 15px;
   }
-
+  .coffee-bg {
+    background-color: var(--coffee) !important;
+  }
   .csecond-parent {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0;
+    background-color: var(--shadeGreyBg);
   }
 
   .c-second {
-    margin: 5vw 0;
+    margin: 0vw 0;
     height: fit-content;
     width: 95%;
     padding: 10px;
-    border: 0.5px solid black;
+    /* border: 0.5px solid black;
     background-color: var(--greenAccent);
-    border-radius: 15px;
+    border-radius: 15px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -158,21 +210,29 @@
 
   .cdate {
     height: 100%;
-    border-radius: 15px;
+    border-radius: 10px;
     display: flex;
-    justify-content: space-around;
+    justify-content: start;
     align-items: center;
     width: 100% !important;
-    background-color: var(--cGreen);
+    background-color: var(--white);
+    margin: 10px 0;
+  }
+  .cdate img {
+    margin: 5px 25px;
   }
   .d-and-p {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-    height: 100%;
-    margin-top: 25px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 1.4rem;
+    height: 75%;
+    margin: 10px 0;
+  }
+  .d-and-p .second-span {
+    font-size: 1.2rem !important;
+    color: var(--coffee);
   }
   .d-and-p h1 {
     margin: 0 !important;
@@ -197,10 +257,10 @@
   }
 
   .timings {
-    margin: 10% 0;
+    margin: 3% 0;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
   }
 
@@ -210,9 +270,10 @@
     align-items: center;
     padding: 10px;
     border-radius: 15px;
-    background-color: var(--cGreen);
+    background-color: #fff;
     margin: 0 5px;
-    width: 45%;
+    font-size: 1.6rem;
+    /* width: 45%; */
   }
 
   .sb {
@@ -220,21 +281,71 @@
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
+    background-color: var(--bgCoffee);
+    border-radius: 0px;
+    width: 39vw;
   }
-
+  .tim-2 {
+    font-size: 1.3rem;
+    margin: 2.5px 5px;
+  }
   .about {
     width: 100%;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
-    margin: 15%;
-    font-size: 1.25rem;
+    margin: 5%;
   }
 
-  .about p {
+  .sb-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sb-img > img {
     width: 75%;
+
+  }
+  .sb-text {
+    margin: 0 20px;
+    /* width: 50%; */
+    height: 100%;
+    text-align: start;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sb-text p {
+    margin: 0 0 !important;
+  }
+  .small-text {
+    font-size: 1rem !important;
+    color: var(--black) !important;
+  }
+  .ati-parent {
+    margin-top: 5px;
+  }
+
+  .ati {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    margin-top: 5px;
+    color: var(--black) !important;
+    font-size: 1.2em!important ;
+  }
+
+  .sb-text span {
+    padding-top: 1px;
+    color: var(--coffee);
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  .about p {
     text-align: center;
+    font-size: 1.4em;
   }
 
   .sb-stats {
@@ -324,7 +435,7 @@
     align-items: center;
     padding: 10px;
     border-radius: 15px;
-    background-color: var(--yellow);
+    background-color: #fffbf0;
     margin: 15px 0;
   }
 
@@ -335,6 +446,8 @@
 
   .h-card img {
     margin: 10px;
+    background-color: var(--coffee);
+    border-radius: 50%;
   }
 
   .card img {
@@ -410,7 +523,11 @@
     text-align: center;
     margin: 5% 0;
   }
-
+  .sn {
+    font-size: 1rem !important;
+    text-decoration: underline;
+    font-weight: 800 !important;
+  }
   .star-cards {
     display: flex;
     flex-direction: column;
@@ -432,9 +549,12 @@
   }
 
   .sc-1 {
-    padding: 10px 0;
+    margin: 0 !important;
+    background-color: var(--black);
+    padding: 0px 5px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    border: 1px solid black;
     width: 100%;
     height: fit-content;
     background-color: var(--black);
@@ -453,13 +573,17 @@
   }
 
   .sc-2 {
-    padding: 15px 0;
+    padding: 10px 0 !important;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
   }
-
+  .sc-2 p {
+    margin: 2px;
+    font-size: 0.8rem;
+    text-align: start;
+  }
   .seventh {
     width: 100%;
     padding: 5% 0 !important;
@@ -470,8 +594,8 @@
   }
   .main-card {
     border-radius: 15px;
-    background-color: #fff8ee;
-    width: 90%;
+    background-color: white;
+    width: 38vw;
     height: fit-content;
     padding: 15px;
     display: flex;
@@ -483,19 +607,49 @@
   }
 
   .main-card span {
+    padding: 0 15px;
     width: 100%;
     text-align: center;
     margin: 15px 0;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    font-weight: 600;
   }
-
+  .main-card .making {
+    font-size: 1.2rem;
+    padding: 0 15px;
+    width: 100%;
+  }
   .weekdays {
+    margin: 15px 5px !important;
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
   }
+  .divider {
+    height: 340px !important;
+    width: 4.5px !important;
+    background-color: var(--grey) !important;
+    margin: 2px 15px;
+  }
+  .wds {
+    text-align: start;
+    font-size: 1.4rem;
+    margin-left: 4rem;
+  }
+  .wds > div {
+    height: 50px;
+  }
 
+  .wds-yoga > div {
+    height: 50px;
+  }
+
+  .wds-yoga {
+    text-align: start;
+    font-size: 1.3rem;
+    font-weight: 800 !important;
+    margin-left: 1.3rem;
+  }
   .weekdays hr {
     height: 0.5px !important;
     width: 30vw;
@@ -506,6 +660,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    height: 25px;
+  }
+  .wd p {
+    margin-bottom: 8px !important;
   }
   .wd b {
     font-size: 1.2rem;
@@ -523,7 +681,9 @@
     width: 75%;
     text-align: center;
   }
-
+  .eigth span {
+    font-size: 1.5rem;
+  }
   .accordion-item {
     border: 1px solid var(--black) !important;
     border-radius: 15px;
@@ -541,4 +701,30 @@
     outline: none !important;
     border: none !important;
   }
+  .modal-parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: fit-content;
+    padding: 20px 0;
+  }
+
+  .modal-inp {
+    font-size: 1.25rem;
+    margin: 15px 25px;
+    border-radius: 15px;
+    border: 0.5px solid black;
+    padding: 10px;
+    width: 75% !important;
+  }
+
+  .modal-dialog {
+    margin: 0 25px !important;
+    border-radius: 25px !important;
+    box-shadow: 0 2px 4px 0 rgba(80, 79, 79, 0.2),
+      0 3px 10px 0 rgba(080, 79, 79, 0.2);
+  }
+
+
 }
