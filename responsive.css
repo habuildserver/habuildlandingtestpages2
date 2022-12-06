@@ -772,7 +772,7 @@
     border-radius: 15px;
     border: 0.5px solid black;
     padding: 10px;
-    width: 75% !important;
+    width: 82%!important;
   }
 
   .modal-dialog {
@@ -884,5 +884,101 @@
 
   .modal-submit-btn {
     all: unset;
+  }
+  .faq-card {
+    width: 90vw;
+    border-radius: 10px !important;
+    z-index: 111;
+    margin: 25px 0;
+  }
+  .faq-ch {
+    border-top-left-radius: 15px !important;
+    border-top-right-radius: 15px !important;
+    border-bottom-left-radius: 15px !important;
+    border-bottom-right-radius: 15px !important;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white) !important;
+    border: none !important;
+  }
+
+  .btn-link {
+    text-decoration: none !important;
+    color: black !important;
+    font-weight: 300 !important;
+  }
+
+  .faq-cb {
+    border-bottom-left-radius: 15px !important;
+    border-bottom-right-radius: 15px !important;
+  }
+
+  .faq_container {
+
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom :50px;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+  
+  }
+
+  .faq_accordion{
+
+    padding: 1rem;
+  }
+  
+  .accordion-item {
+  
+    font-family: 'Nunito';
+    /* width: 100% !important; */
+    margin-bottom: 20px;
+    padding: 1rem;
+    border: 0.5px solid rgba(0, 0, 0, 0.188) !important ;
+    border-radius: 10px !important;
+    outline: none !important;
+    text-align: left;
+  
+  }
+  
+  .accordion-button:focus,.accordion-button:active {
+    box-shadow: none !important;
+    outline: none !important;
+    border: none !important;
+    border-color: rgba(0,0,0,.125) !important;
+    background-color: transparent !important;
+    text-decoration: none !important;
+  }
+  
+  .accordion-button:not(.collapsed){
+    color: black !important;
+    background-color: transparent !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  
+  .accordion-header:focus,.accordion-header:active {
+  
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  
+  .accordion-button::after{
+    transition: none !important;
+    color: black !important;
+  }
+
+  .accordion-button:not(.collapsed)::after{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+
+  }
+  .intl-tel-input, .iti{
+    margin: 15px 19px;
   }
 }
