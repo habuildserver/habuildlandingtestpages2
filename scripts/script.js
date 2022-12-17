@@ -1,4 +1,4 @@
-const API_BASE_URL = 'https://stage.api.habuild.in'
+const API_BASE_URL = 'https://api.habuild.in'
 
 
 $("#carouselExampleControls")
