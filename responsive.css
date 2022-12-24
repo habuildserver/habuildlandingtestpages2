@@ -125,7 +125,7 @@
 
   .first {
     position: relative;
-    padding: 20% 0 10% 0;
+    padding: 2% 0 10% 0;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -152,7 +152,7 @@
   }
 
   .first p {
-    margin: 2.5vh 5vw;
+    margin: 1.2vh 5vw;
     text-align: center;
     font-size: 0.75rem;
     width: 75%;
@@ -820,9 +820,9 @@
     width: 250px;
     text-decoration: none;
     text-align: center;
-    background: #f2305a;
+    background: #000;
     padding: 15px 0;
-    border-radius: 50px;
+    border-radius: 50px!important;
     color: #fff;
     transition: all ease 0.2s;
     -webkit-box-shadow: 2px 3px 2px 0px rgba(0, 0, 0, 0.17);
@@ -876,6 +876,13 @@
   button:hover {
     color: rgb(240, 240, 240);
     cursor: pointer;
+  }
+  .modal-title{
+    width: 100em!important;
+    font-weight: 600;
+  }
+  .modal-header .close{
+    margin: 0!important;
   }
 
   .modal-close {
